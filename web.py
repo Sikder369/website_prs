@@ -287,7 +287,7 @@ elif page == "📝 Travel Story":
         Nature at Königssee felt pure, silent, and powerful.
 
         Some places are beautiful in photos.
-        Königssee is even more beautiful in real life.
+        Königssee is even more beautiful in real life."""
     }
 
     # ------------------------------------------------
