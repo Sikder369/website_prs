@@ -228,20 +228,34 @@ elif page == "📸 Upload Photo":
 # TRAVEL STORY PAGE
 # ----------------------------------------------------
 elif page == "📝 Travel Story":
+
     st.markdown('<div class="section-title">📝 My Travel Story</div>', unsafe_allow_html=True)
 
-    story = st.text_area(
-        "Write your travel story here",
-        placeholder="Example: Today I visited a beautiful place..."
-    )
+    # You write your story inside this variable
+    # Visitors cannot edit this
+    my_story = """
+    My journey started with a small dream and a big curiosity.
 
-    if story:
-        st.markdown(f"""
-        <div class="card">
-            <h3>My Story</h3>
-            <p>{story}</p>
-        </div>
-        """, unsafe_allow_html=True)
+    I love travelling because every place teaches me something new.
+    Sometimes the road is difficult, sometimes the weather is bad,
+    but every journey gives me a beautiful memory.
+
+    For me, travel is not only about visiting places.
+    It is about meeting people, feeling culture, tasting food,
+    capturing moments, and collecting stories.
+
+    My journey never ends...
+    """
+
+    # This shows your story beautifully on the website
+    st.markdown(f"""
+    <div class="card">
+        <h2>Journey that Never Ends 🌍</h2>
+        <p style="font-size:18px; line-height:1.8;">
+            {my_story}
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 
 # ----------------------------------------------------
