@@ -307,7 +307,7 @@ elif page == "📝 Travel Story":
     st.markdown(f"""
     <div class="card">
         <h2>{selected_story}</h2>
-         style="font-size:18px; line-height:1.8;">
+         <div style="font-size:18px; line-height:1.8;">
             {stories[selected_story]}
         
     </div>
