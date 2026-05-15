@@ -287,9 +287,9 @@ elif page == "📝 Travel Story":
     st.markdown(f"""
     <div class="card">
         <h2>{selected_story}</h2>
-        <p style="font-size:18px; line-height:1.8;">
+         style="font-size:18px; line-height:1.8;">
             {stories[selected_story]}
-        </p>
+        
     </div>
     """, unsafe_allow_html=True)
 
