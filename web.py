@@ -267,7 +267,27 @@ elif page == "📝 Travel Story":
         and met people with beautiful smiles.
 
         A city is not only buildings. A city is people, culture, and stories.
-        """
+        """,
+        "🏰 My Journey to Füssen ": """Füssen felt like a magical town surrounded by mountains and beautiful nature.
+
+        The streets were colorful, peaceful, and full of history.
+        Every corner looked like a postcard.
+
+        Visiting Füssen was not only a trip —
+        it felt like stepping into a fairytale.
+
+        The mountains, castles, and fresh air made the journey unforgettable.
+        """,
+        "⛰️ Beautiful Königssee Lake": """
+        Königssee was one of the most beautiful lakes I have ever seen.
+
+        The water was crystal clear and the mountains around the lake looked breathtaking.
+        The peaceful boat ride made everything feel calm and magical.
+
+        Nature at Königssee felt pure, silent, and powerful.
+
+        Some places are beautiful in photos.
+        Königssee is even more beautiful in real life.
     }
 
     # ------------------------------------------------
