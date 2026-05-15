@@ -227,32 +227,68 @@ elif page == "📸 Upload Photo":
 # ----------------------------------------------------
 # TRAVEL STORY PAGE
 # ----------------------------------------------------
+# ----------------------------------------------------
+# TRAVEL STORY PAGE
+# You add many stories, visitors only select and read
+# ----------------------------------------------------
 elif page == "📝 Travel Story":
 
-    st.markdown('<div class="section-title">📝 My Travel Story</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-title">📝 My Travel Stories</div>', unsafe_allow_html=True)
 
-    # You write your story inside this variable
-    # Visitors cannot edit this
-    my_story = """
-    My journey started with a small dream and a big curiosity.
+    # ------------------------------------------------
+    # STORY DATABASE
+    # This dictionary stores many stories
+    # Left side = story title
+    # Right side = story text
+    # ------------------------------------------------
+    stories = {
+        "🌄 My First Mountain Trip": """
+        My first mountain trip was unforgettable.
 
-    I love travelling because every place teaches me something new.
-    Sometimes the road is difficult, sometimes the weather is bad,
-    but every journey gives me a beautiful memory.
+        The air was fresh, the road was quiet, and the view was magical.
+        I felt like the clouds were walking beside me.
 
-    For me, travel is not only about visiting places.
-    It is about meeting people, feeling culture, tasting food,
-    capturing moments, and collecting stories.
+        That day I learned: sometimes the best stories begin where the road becomes difficult.
+        """,
 
-    My journey never ends...
-    """
+        "🌊 A Day Near the Sea": """
+        The sea always gives me peace.
 
-    # This shows your story beautifully on the website
+        I sat near the waves and watched the sunset slowly disappear.
+        The sound of water felt like music.
+
+        That moment reminded me that life is also like the sea — sometimes calm, sometimes wild.
+        """,
+
+        "🏙️ City Lights and Memories": """
+        Every city has its own heartbeat.
+
+        I walked through busy streets, saw colorful lights, tasted local food,
+        and met people with beautiful smiles.
+
+        A city is not only buildings. A city is people, culture, and stories.
+        """
+    }
+
+    # ------------------------------------------------
+    # SELECT BOX
+    # Visitor can choose which story to read
+    # ------------------------------------------------
+    selected_story = st.selectbox(
+        "Choose a story to read:",
+        list(stories.keys())
+    )
+
+    # ------------------------------------------------
+    # SHOW SELECTED STORY
+    # stories[selected_story] means:
+    # "Show the story connected with selected title"
+    # ------------------------------------------------
     st.markdown(f"""
     <div class="card">
-        <h2>Journey that Never Ends 🌍</h2>
+        <h2>{selected_story}</h2>
         <p style="font-size:18px; line-height:1.8;">
-            {my_story}
+            {stories[selected_story]}
         </p>
     </div>
     """, unsafe_allow_html=True)
